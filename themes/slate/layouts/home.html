@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ .Content }}
+  <section>
+    <h1>Projects</h1>
+    <ul>
+      {{ range site.Data.projects }}
+        <li>
+          <h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
+          <p>{{ .description }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}

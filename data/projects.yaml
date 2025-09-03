@@ -1,0 +1,11 @@
+- title: "My Hugo Theme"
+  description: "A theme built with Hugo."
+  url: "https://github.com/noekrebs/hugo-theme"
+
+- title: "Portfolio Website"
+  description: "Personal portfolio built with Tailwind."
+  url: "https://noekrebs.dev"
+
+- title: "Cool App"
+  description: "A JavaScript experiment."
+  url: "https://example.com/app"
