@@ -1,0 +1,42 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "div",
+      "footer",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "head",
+      "header",
+      "html",
+      "li",
+      "main",
+      "meta",
+      "p",
+      "script",
+      "section",
+      "title",
+      "ul"
+    ],
+    "classes": [
+      "max-w-[700px]",
+      "md:p-8",
+      "md:px-",
+      "md:px-6",
+      "mt-36",
+      "mx-auto",
+      "p-4",
+      "px-",
+      "px-4",
+      "py",
+      "py-12"
+    ],
+    "ids": [
+      "hey-im-noé-krebs",
+      "systems-engineer-on-paper-and-developer-at-heart"
+    ]
+  }
+}
