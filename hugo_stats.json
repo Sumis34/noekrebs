@@ -1,0 +1,28 @@
+{
+  "htmlElements": {
+    "tags": [
+      "a",
+      "body",
+      "footer",
+      "h1",
+      "h2",
+      "h3",
+      "head",
+      "header",
+      "html",
+      "li",
+      "main",
+      "meta",
+      "p",
+      "script",
+      "section",
+      "title",
+      "ul"
+    ],
+    "classes": null,
+    "ids": [
+      "hey-im-noé-krebs",
+      "systems-engineer-on-paper-and-developer-at-heart"
+    ]
+  }
+}
