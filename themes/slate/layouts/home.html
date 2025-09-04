@@ -1,14 +1,23 @@
 {{ define "main" }}
-  {{ .Content }}
-  <section class="mt-36">
-    <h3>Projects</h3>
-    <ul>
-      {{ range site.Data.projects }}
-        <li>
-          <h4><a href="{{ .url }}" target="_blank">{{ .title }}</a></h4>
-          <p>{{ .description }}</p>
-        </li>
-      {{ end }}
-    </ul>
-  </section>
+<h1>{{ .Params.heading }}</h1>
+<p>{{ .Description }}</p>
+<section class="mt-36">
+  <h3>Projects</h3>
+  <ul class="group">
+    {{ range site.Data.projects }}
+    <li
+      class="opacity-100 group-has-[li:hover]:opacity-50 hover:!opacity-100 transition-opacity duration-200 pb-2"
+    >
+      <a href="{{ .link }}">
+        <div class="flex gap-2">
+          <h4>{{ .title }}</h4>
+          <span>{{ .date }}</span>
+        </div>
+        <p>{{ .description }}</p>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+<section class="content mt-12">{{ .Content }}</section>
 {{ end }}

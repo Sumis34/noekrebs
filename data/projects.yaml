@@ -1,11 +1,14 @@
 - title: "My Hugo Theme"
   description: "A theme built with Hugo."
   url: "https://github.com/noekrebs/hugo-theme"
+  date: "2025"
 
 - title: "Portfolio Website"
   description: "Personal portfolio built with Tailwind."
   url: "https://noekrebs.dev"
+  date: "2024"
 
 - title: "Cool App"
   description: "A JavaScript experiment."
   url: "https://example.com/app"
+  date: "2023 - 2024"

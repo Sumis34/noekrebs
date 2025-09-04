@@ -4,9 +4,7 @@
       "a",
       "body",
       "div",
-      "footer",
       "h1",
-      "h2",
       "h3",
       "h4",
       "head",
@@ -18,20 +16,32 @@
       "p",
       "script",
       "section",
+      "span",
       "title",
       "ul"
     ],
     "classes": [
-      "max-w-[700px]",
+      "content",
+      "duration-200",
+      "flex",
+      "gap-2",
+      "group",
+      "group-has-[li:hover]:opacity-50",
+      "hover:!opacity-100",
+      "max-w-[670px]",
       "md:px-6",
+      "mt-12",
       "mt-36",
       "mx-auto",
+      "opacity-100",
+      "pb-2",
       "px-4",
-      "py-12"
+      "py-12",
+      "transition-opacity"
     ],
     "ids": [
-      "hey-im-noé-krebs",
-      "systems-engineer-on-paper-and-developer-at-heart"
+      "about-me",
+      "gallery"
     ]
   }
 }
