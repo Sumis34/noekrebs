@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
+<html
+  lang="{{ site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body class="px-4 md:px-6">
+    <div class="max-w-[700px] mx-auto py-12">
+      <header></header>
+      <main>{{ block "main" . }}{{ end }}</main>
+      <footer>{{ partial "footer.html" . }}</footer>
+    </div>
+  </body>
 </html>
