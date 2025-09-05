@@ -6,11 +6,16 @@
   <ul class="group">
     {{ range site.Data.projects }}
     <li
-      class="opacity-100 group-has-[li:hover]:opacity-50 hover:!opacity-100 transition-opacity duration-200 pb-2"
+      class="opacity-100 group-has-[li:hover]:opacity-50 hover:!opacity-100 transition-opacity duration-200 pb-2 group/item"
     >
-      <a href="{{ .link }}">
+      <a href="{{ .url }}" target="_blank" rel="noopener">
         <div class="flex gap-2">
-          <h4>{{ .title }}</h4>
+          <div class="relative flex items-center">
+            <div
+              class="size-2 rounded-full bg-accent absolute group-hover/item:-translate-x-4 opacity-0 group-hover/item:opacity-100 transition-all duration-200"
+            ></div>
+            <h4>{{ .title }}</h4>
+          </div>
           <span>{{ .date }}</span>
         </div>
         <p>{{ .description }}</p>

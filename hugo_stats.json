@@ -3,6 +3,7 @@
     "tags": [
       "a",
       "body",
+      "br",
       "div",
       "h1",
       "h3",
@@ -11,6 +12,7 @@
       "header",
       "html",
       "li",
+      "link",
       "main",
       "meta",
       "p",
@@ -21,27 +23,38 @@
       "ul"
     ],
     "classes": [
+      "absolute",
+      "bg-accent",
       "content",
       "duration-200",
       "flex",
+      "flex-col",
       "gap-2",
       "group",
       "group-has-[li:hover]:opacity-50",
+      "group-hover/item:-translate-x-4",
+      "group-hover/item:opacity-100",
+      "group/item",
       "hover:!opacity-100",
+      "items-center",
       "max-w-[670px]",
       "md:px-6",
       "mt-12",
       "mt-36",
       "mx-auto",
+      "opacity-0",
       "opacity-100",
       "pb-2",
       "px-4",
       "py-12",
+      "relative",
+      "rounded-full",
+      "size-2",
+      "transition-all",
       "transition-opacity"
     ],
     "ids": [
-      "about-me",
-      "gallery"
+      "about-me"
     ]
   }
 }
