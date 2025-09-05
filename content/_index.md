@@ -1,6 +1,6 @@
 +++
 date = '2025-09-03T20:51:17+02:00'
-draft = true
+draft = false
 title = 'Noé Krebs'
 description = "I'm currently pursuing an apprenticeship in Systems Engineering at the Die Schweizerische Post. My passion lies in creating meaningful films and building powerful apps."
 heading = "Hey, I'm Noé Krebs"
