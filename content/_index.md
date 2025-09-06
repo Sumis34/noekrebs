@@ -8,8 +8,8 @@ heading = "Hey, I'm Noé Krebs"
 
 ### About Me
 
-In addition to my professional work, I love exploring the outdoors and spending time in the mountains hiking. I also enjoy photography, capturing the beauty of nature and everyday life through my lens.  
+In addition to my professional work, I love exploring the outdoors and spending time in the mountains hiking. I also enjoy [photography](https://www.instagram.com/noekrebs), capturing the beauty of nature and everyday life through my lens.  
 
-I like to build and tinker with electronics and microcontrollers, creating fun and sometimes useful gadgets.  
+I like to build and tinker with electronics and microcontrollers, creating fun and sometimes [useful gadgets](https://github.com/Sumis34/glowb).  
 
 A big part of my free time is also dedicated to coding, as you can see in the projects listed above.
