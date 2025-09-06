@@ -5,31 +5,34 @@
 @theme {
   --font-display: "Inter", sans-serif;
   --color-accent: oklch(70.5% 0.213 47.604);
+  --color-muted: var(--color-neutral-500);
+  --color-foreground: var(--color-neutral-900);
+  --color-background: var(--color-neutral-100);
 }
 
 body {
-  @apply font-display text-neutral-500 selection:bg-accent selection:text-neutral-900;
+  @apply font-display text-muted selection:bg-accent selection:text-foreground;
 }
 
 h1 {
-  @apply mt-6 sm:mt-12 text-2xl font-medium tracking-tight text-neutral-900 mb-3;
+  @apply mt-6 sm:mt-12 text-2xl font-medium tracking-tight text-foreground mb-3;
 }
 
 h2 {
-  @apply text-2xl font-medium tracking-tight text-neutral-500;
+  @apply text-2xl font-medium tracking-tight text-muted;
 }
 
 h3 {
-  @apply mb-5 text-lg font-medium tracking-tight text-neutral-900;
+  @apply mb-5 text-lg font-medium tracking-tight text-foreground;
 }
 
 h4 {
-  @apply text-base text-neutral-900 font-medium
+  @apply text-base text-foreground font-medium
 }
 
 .content {
   a {
-    @apply text-neutral-900 hover:underline underline-offset-2 duration-200;
+    @apply text-foreground hover:underline underline-offset-2 duration-200;
   }
   
   p {
