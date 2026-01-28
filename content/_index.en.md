@@ -13,7 +13,3 @@ In addition to my professional work, I love exploring the outdoors and spending 
 I like to build and tinker with electronics and microcontrollers, creating fun and sometimes [useful gadgets](https://github.com/Sumis34/glowb).  
 
 A big part of my free time is also dedicated to coding, as you can see in the projects listed above.
-
----
-
-Lieber uf [Bärndütsch](/de-ch)?

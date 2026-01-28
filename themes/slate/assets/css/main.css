@@ -30,6 +30,10 @@ h4 {
   @apply text-base text-foreground font-medium
 }
 
+hr {
+  @apply border-muted/30 my-4
+}
+
 .content {
   a {
     @apply text-foreground hover:underline underline-offset-2 duration-200;

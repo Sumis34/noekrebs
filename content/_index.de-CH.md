@@ -13,7 +13,3 @@ I mire Freizit verbringeni müglicht viu zit dusse, ungerwägs ide Berge oder s�
 Näbst dem experimentiereni viu mit elektronik und mikrocontroller, am beste fingis wenns e balance us Soft- und Hardware git. der bei entschteit no so ds eint oder angere interesante [ding](https://github.com/Sumis34/glowb).  
 
 E grosse teil vo mire Freizit verbringeni mit programmiere, mini aktuellschte Projekt mitem meiste stouz derhinger hani obe ufglistet.
-
----
-
-More comfortable with [English](/en)?
