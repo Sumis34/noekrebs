@@ -16,4 +16,4 @@ A big part of my free time is also dedicated to coding, as you can see in the pr
 
 ---
 
-Lieber uf [Bärndütsch](/de-CH)?
+Lieber uf [Bärndütsch](/de-ch)?
