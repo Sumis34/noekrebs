@@ -2,6 +2,12 @@ languageCode = 'en-us'
 title = 'Noé Krebs'
 theme = 'slate'
 
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+disableLanguages = []
+
+
 [build]
   [build.buildStats]
     enable = true
@@ -22,3 +28,9 @@ theme = 'slate'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[languages]
+  [languages.en]
+    weight = 1
+  [languages.de-CH]
+    weight = 2
