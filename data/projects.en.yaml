@@ -1,0 +1,19 @@
+- title: "Shiper"
+  description: "My biggest and most successful project. A Docker-first, zero-configuration deployment platform for developers."
+  url: "https://shiper.app"
+  date: "2023 - Present"
+
+- title: "Null Zucker"
+  description: "A lightweight tool that shows the amount of sugar in a product by scanning its barcode."
+  url: "https://null-zucker.on.shiper.app"
+  date: "2024"
+
+- title: "Cuota File Sharing"
+  description: "An open-source alternative to file-sharing platforms like WeTransfer, optimized for creators."
+  url: "https://cuota.noekrebs.ch"
+  date: "2022"
+
+- title: "Napp Grades"
+  description: "A web app that helps students organize their grades and track their academic performance."
+  url: "https://napp.noekrebs.ch"
+  date: "2022"
