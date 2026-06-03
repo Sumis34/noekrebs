@@ -1,0 +1,10 @@
+<div class="grid grid-cols-3 gap-2 my-2">
+  {{- range .Params -}}
+    {{- partial "image.html" (dict
+      "src" .
+      "alt" ""
+      "page" $.Page
+      "sizes" "(max-width: 768px) 100vw, 33vw"
+    ) -}}
+  {{- end -}}
+</div>

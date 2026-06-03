@@ -1,0 +1,51 @@
+{{- $src := .src -}}
+{{- $alt := .alt -}}
+{{- $sizes := .sizes | default "(max-width: 768px) 100vw, 768px" -}}
+{{- $pictureClass := .pictureClass -}}
+{{- $imgClass := .imgClass -}}
+
+{{- $image := .page.Resources.Get $src -}}
+{{- if not $image -}}
+  {{- $image = resources.Get $src -}}
+{{- end -}}
+
+{{- if not $image -}}
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy">
+{{- else -}}
+
+  {{- $widths := slice 480 768 1024 1366 1600 -}}
+  {{- if lt $image.Width 480 -}}
+    {{- $widths = slice $image.Width -}}
+  {{- end -}}
+
+  {{- $avif := slice -}}
+  {{- $webp := slice -}}
+  {{- $fallback := slice -}}
+  {{- $fallbackSrc := "" -}}
+
+  {{- range $w := $widths -}}
+    {{- if le $w $image.Width -}}
+      {{- $resized := $image.Resize (printf "%dx" $w) -}}
+      {{- $avif = $avif | append (printf "%s %dw" ($resized.Process "convert avif").RelPermalink $w) -}}
+      {{- $webp = $webp | append (printf "%s %dw" ($resized.Process "convert webp").RelPermalink $w) -}}
+      {{- $fallback = $fallback | append (printf "%s %dw" $resized.RelPermalink $w) -}}
+      {{- $fallbackSrc = $resized.RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+
+<picture {{ with $pictureClass }} class="{{ . }}"{{ end }}>
+  <source type="image/avif" srcset="{{ delimit $avif ", " }}">
+  <source type="image/webp" srcset="{{ delimit $webp ", " }}">
+  <img
+    src="{{ $fallbackSrc }}"
+    srcset="{{ delimit $fallback ", " }}"
+    sizes="{{ $sizes }}"
+    alt="{{ $alt }}"
+    width="{{ $image.Width }}"
+    height="{{ $image.Height }}"
+    class=" rounded-sm overflow-hidden max-h-[90vh] object-cover"
+    loading="lazy"
+    decoding="async">
+</picture>
+
+{{- end -}}
