@@ -1,58 +1,60 @@
 {{ define "main" }}
-<h1>{{ .Params.heading }}</h1>
-<p>{{ .Description }}</p>
-<ul class="flex gap-4 mt-6">
-  {{ range site.Data.socials }}
-  <li>
-    <a
-      href="{{ .url }}"
-      target="_blank"
-      class="bg-neutral-100 hover:bg-neutral-200/75 px-4 py-1.5 flex gap-1 items-center rounded-full font-medium text-foreground transition-colors duration-200 group"
-      rel="noopener"
-    >
-      {{ .title }}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        class="stroke-foreground size-[16px]"
+<div class="max-w-2xl mx-auto">
+  <h1>{{ .Params.heading }}</h1>
+  <p>{{ .Description }}</p>
+  <ul class="flex gap-4 mt-6">
+    {{ range site.Data.socials }}
+    <li>
+      <a
+        href="{{ .url }}"
+        target="_blank"
+        class="bg-neutral-100 hover:bg-neutral-200/75 px-4 py-1.5 flex gap-1 items-center rounded-full font-medium text-foreground transition-colors duration-200 group"
+        rel="noopener"
       >
-        <path
-          d="M18 15V6M18 6H9M18 6L6.25 17.75"
-          stroke-width="2.25"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        ></path>
-      </svg>
-    </a>
-  </li>
-  {{ end }}
-</ul>
-<section class="mt-36">
-  <h3>Projects</h3>
-  <ul class="group">
-    {{ $projects := index site.Data (printf "projects.%s" site.Language.Lang) | default site.Data.projects }}
-    {{ range $projects }}
-    <li
-      class="opacity-100 group-has-[li:hover]:opacity-50 hover:!opacity-100 transition-opacity duration-200 pb-4 group/item"
-    >
-      <a href="{{ .url }}" target="_blank" rel="noopener">
-        <div class="flex gap-2">
-          <div class="relative flex items-center">
-            <div
-              class="size-2 rounded-full bg-accent absolute group-hover/item:-translate-x-4 opacity-0 group-hover/item:opacity-100 transition-all duration-200"
-            ></div>
-            <h4>{{ .title }}</h4>
-          </div>
-          <span>{{ .date }}</span>
-        </div>
-        <p>{{ .description }}</p>
+        {{ .title }}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          class="stroke-foreground size-[16px]"
+        >
+          <path
+            d="M18 15V6M18 6H9M18 6L6.25 17.75"
+            stroke-width="2.25"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
       </a>
     </li>
     {{ end }}
   </ul>
-</section>
-<section class="content my-12">{{ .Content }}</section>
+  <section class="mt-36">
+    <h3>Projects</h3>
+    <ul class="group">
+      {{ $projects := index site.Data (printf "projects.%s" site.Language.Lang)
+      | default site.Data.projects }} {{ range $projects }}
+      <li
+        class="opacity-100 group-has-[li:hover]:opacity-50 hover:!opacity-100 transition-opacity duration-200 pb-4 group/item"
+      >
+        <a href="{{ .url }}" target="_blank" rel="noopener">
+          <div class="flex gap-2">
+            <div class="relative flex items-center">
+              <div
+                class="size-2 rounded-full bg-accent absolute group-hover/item:-translate-x-4 opacity-0 group-hover/item:opacity-100 transition-all duration-200"
+              ></div>
+              <h4>{{ .title }}</h4>
+            </div>
+            <span>{{ .date }}</span>
+          </div>
+          <p>{{ .description }}</p>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  <section class="content my-12">{{ .Content }}</section>
+</div>
 {{ end }}

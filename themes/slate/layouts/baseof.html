@@ -7,10 +7,10 @@
     {{ partial "head.html" . }}
   </head>
   <body class="px-6">
-    <div class="max-w-2xl mx-auto py-12">
+    <div class="py-12">
       <header></header>
       <main>{{ block "main" . }}{{ end }}</main>
-      <footer>{{ partial "footer.html" . }}</footer>
+      <footer class="max-w-2xl mx-auto">{{ partial "footer.html" . }}</footer>
     </div>
   </body>
 </html>

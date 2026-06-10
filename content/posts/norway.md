@@ -11,3 +11,6 @@ title = 'Exploring Norway in January'
   "images/norway/DSC_3440.jpg"
   "images/norway/DSC_3467.jpg"
 >}}
+
+# test
+bonjour

@@ -54,13 +54,9 @@
       "hover:underline",
       "items-center",
       "justify-center",
-      "max-h-96",
-      "max-h-[70vh]",
-      "max-h-[80vh]",
       "max-h-[90vh]",
       "max-w-2xl",
-      "max-w-3xl",
-      "max-w-[670px]",
+      "max-w-5xl",
       "mb-10",
       "mt-36",
       "mt-6",
@@ -79,7 +75,6 @@
       "py-12",
       "relative",
       "rounded-full",
-      "rounded-md",
       "rounded-sm",
       "size-2",
       "size-[16px]",
@@ -94,6 +89,7 @@
     ],
     "ids": [
       "about-me",
+      "test",
       "über-mi"
     ]
   }
