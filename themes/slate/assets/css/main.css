@@ -43,6 +43,53 @@ hr {
     @apply mb-5 last:mb-0;
   }
 
+  h2 {
+    @apply mt-10 mb-4 text-foreground;
+  }
+
+  h3 {
+    @apply mt-8 mb-3;
+  }
+
+  h4,
+  h5,
+  h6 {
+    @apply mt-6 mb-2;
+  }
+
+  strong {
+    @apply font-semibold text-foreground;
+  }
+
+  :not(pre) > code {
+    @apply rounded bg-neutral-200 px-1.5 py-0.5 font-mono text-[0.875em] text-foreground;
+  }
+
+  pre {
+    @apply mb-5 overflow-x-auto rounded-sm bg-neutral-200 p-4 text-sm;
+  }
+
+  ul,
+  ol {
+    @apply mb-5 pl-6;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  ol {
+    @apply list-decimal;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  blockquote {
+    @apply mb-5 border-l-2 border-accent pl-4 italic;
+  }
+
   h1,
   h2,
   h3,
@@ -50,6 +97,9 @@ hr {
   h5,
   h6,
   pre,
+  ul,
+  ol,
+  blockquote,
   p {
     @apply max-w-2xl mx-auto;
   }

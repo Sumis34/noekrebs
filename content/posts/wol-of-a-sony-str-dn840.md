@@ -1,6 +1,6 @@
 +++
 date = '2026-11-02T20:24:34+02:00'
-draft = true
+draft = false
 title = 'Wake a Sony STR-DN840 from Standby with Wake-on-LAN'
 +++
 
